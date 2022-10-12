@@ -1,12 +1,8 @@
 import React,{ useState } from 'react';
+import EventHandlingF from './components/Day2/EventHandlingF';
 // import VarStyle from './components/VarStyle'; //Test.jsx파일 import
-// import Event from './components/Event';
-// import Clock from './components/Clock';
-// import Props from './components/Props';
-// import EventHandlingC from './components/EventHandlingC';
-import EventHandlingF from './components/EventHandlingF';
 
-// rcs 함수형으로 생성, rcc 클래스형으로 생성
+// 자동완성 rcs 함수형으로 생성, rcc 클래스형으로 생성
 
 //함수형
  function App(){
