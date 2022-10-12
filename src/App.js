@@ -3,7 +3,7 @@ import React,{ useState } from 'react';
 // import Event from './components/Event';
 // import Clock from './components/Clock';
 // import Props from './components/Props';
-import EventHandlingC from './components/EventHandlingC';
+// import EventHandlingC from './components/EventHandlingC';
 
 // rcs 함수형으로 생성, rcc 클래스형으로 생성
 
