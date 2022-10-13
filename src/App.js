@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import EventHandlingF from './components/Day2/EventHandlingF';
 // import VarStyle from './components/VarStyle'; //Test.jsx파일 import
+import RefF from './components/Day3/RefF';
 
 // 자동완성 rcs 함수형으로 생성, rcc 클래스형으로 생성
 
@@ -19,7 +20,7 @@ import EventHandlingF from './components/Day2/EventHandlingF';
         <button onClick={() => setCount(count + 1)}>{count}</button>
         <button onClick={textPrint}>값 출력</button> {/* textPrint함수 호출 */}
         {/* <Props name="React" stateSpec="high"/>; {Mycomponent에 name="React"를 보냄} */}
-        <EventHandlingF />
+        <RefF/>
       </div>
     );
 }

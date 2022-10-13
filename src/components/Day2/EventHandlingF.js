@@ -34,7 +34,7 @@ const EventHandlingF = () => {
     const { username, message } = form;
     const changeForm = e => {
         const nextForm = {
-            ...form, //form에 접근?
+            ...form, //form을 푸는거
             [e.target.name] : e.target.value, //form 각 필드에 값 넣기
         };
         setForm(nextForm); //nextData의 값들을 setForm에 넣기
