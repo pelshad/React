@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [1,4,9];
+        const doubles = numbers.map((num) => {
+            return num * 2;
+        })
+        console.log(doubles);
+
+        const roots = numbers.map(Math.sqrt)
+        console.log(roots);
+
+
+        //call()이나 apply() 메소드를 이용하여 
+        //유사 배열 객체에 배열 메소드를 빌려서 사용 할 수 있음
+        let map = Array.prototype.map; //Array객체안 prototype->map를 꺼내옴
+        let a = map.call('Hello World', (x) => {
+            return x.charCodeAt(0);// 각 문자의 ASCII 인코딩 값을 가져오는 함수.
+        })
+        console.log(a);
+
+        //옵션에서 선택된 옵션값 선택
+        const elems = document.querySelectorAll('select option:checked');
+        //선택된 데이터를 values 배열에 담기
+        const values = [].map.call(elems, (obj) => {
+            return obj.value;
+        })
+
+
+    </script>
+</body>
+</html>

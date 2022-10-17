@@ -6,6 +6,7 @@ const RefF = () => {
     const [check, setCheck] = useState(false);
     const [validated, setValidated] = useState(false);
 
+    //메소드 사용 전에 꼭 선언자 사용!
     const handleChange = e => {
         setPassword(e.target.value);
     }
@@ -15,7 +16,7 @@ const RefF = () => {
         setValidated(password == '0000');
     }
 
-    
+    //react에서 if문은 3항식으로 사용
     return (
         <div>
             <input 
