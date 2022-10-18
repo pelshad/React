@@ -12,10 +12,15 @@ const Map2 = () => {
 
     const nameList = names.map(name => <li key={name.id}>{name.text}</li>);
 
+    const changeText = e => setInputText(e.target.value);
     const insertName = () => {
-        names.concat({
-            id:''
-        })
+        const nextNames = names.concat({
+            id: nextId,
+            text: inputText
+        });
+        setNextId(nextId + 1);
+        setNames(nextNames);
+        setInputText('');
     }
 
     return (
@@ -24,8 +29,7 @@ const Map2 = () => {
             <input 
             type="text"
             value={inputText}
-            onChange={changeinput}
-            
+            onChange={changeText}
              />
             <button onclick={insertName}></button>
         </div>
