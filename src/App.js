@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
+import Map2 from './components/Day4/Map2';
 
 const App = () => {
-  const names = ["a", "b", "c"];
-  const nameList = names.map((name) => {
-    <li>{name}</li>
-  })
+  
 
   return (
     <div>
-      {nameList}
+      <Map2 />
     </div>
   );
 };
