@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import Map2 from './components/Day4/Map2';
+import React from 'react';
 
 const App = () => {
-  
-
-  return (
-    <div>
-      <Map2 />
-    </div>
-  );
+    return (
+        <div>
+            
+        </div>
+    );
 };
 
 export default App;
